@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(100, 225, 228);
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: rgb(10, 180, 183);
 }
 .image-gallery {
   max-width: 50rem;
@@ -23,7 +26,8 @@ body {
 
   object-fit: cover;
 
-  border: 10px solid black;
+  border: 0.5rem solid black;
+  border-radius: 4rem;
   transition: scale 500ms ease, opacity 500ms linear, border-radius 600ms;
 }
 .image-gallery:has(img:hover) > img:not(:hover) {
@@ -31,5 +35,6 @@ body {
   opacity: 0.5;
 }
 .image-gallery > img:hover {
-  border-radius: 50%;
+  border-radius: 4rem;
+  filter: drop-shadow(20px 20px 20px white);
 }
