@@ -28,7 +28,7 @@ body {
 
   border: 0.5rem solid black;
   border-radius: 4rem;
-  transition: scale 500ms ease, opacity 500ms linear, border-radius 600ms;
+  transition: scale 500ms ease, opacity 500ms linear;
 }
 .image-gallery:has(img:hover) > img:not(:hover) {
   scale: 0.7;
